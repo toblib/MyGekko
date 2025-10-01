@@ -1,4 +1,5 @@
 from PyMyGekko import MyGekkoApiClientBase
+from aiohttp import ClientSession
 
 class MyGekkoLocalApiClient(MyGekkoApiClientBase):
     """The api client to access MyGekko locally."""
