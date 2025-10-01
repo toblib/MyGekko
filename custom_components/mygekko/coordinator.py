@@ -56,7 +56,7 @@ class MyGekkoDataUpdateCoordinator(DataUpdateCoordinator):
             ip_address = entry.data.get(CONF_IP_ADDRESS)
 
             session = async_get_clientsession(hass, verify_ssl=False)
-            client = MyGekkoLocalApiClient(username, password, session, ip_address)
+            client = MyGekkoLocalApiClient(username, password, session, ip_address, scheme="http")
 
         if entry.data.get(CONF_CONNECTION_TYPE) == CONF_CONNECTION_DEMO_MODE:
             client = MyGekkoDemoModeClient()
