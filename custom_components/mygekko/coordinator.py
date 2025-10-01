@@ -13,7 +13,7 @@ from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator
 from homeassistant.helpers.update_coordinator import UpdateFailed
 from PyMyGekko import MyGekkoDemoModeClient
-from PyMyGekko import MyGekkoLocalApiClient
+from .modifications import MyGekkoLocalApiClient
 from PyMyGekko import MyGekkoQueryApiClient
 
 from .const import CONF_CONNECTION_DEMO_MODE
